@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
 
 * {
   margin: none;
@@ -11,7 +11,7 @@ ul {
 
 html {
   font-size: 15px;
-  font-family: 'Poppins', serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   color:whitesmoke;
 }
@@ -24,10 +24,44 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+}
+
+#servicos {
+  text-align: center;
+
+}
+
+#sobre-nos {
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+.formulario {
+  margin: 0 auto; /* centraliza o formulário horizontalmente */
+  width: 80%; /* define a largura do formulário */
+  margin: 0 auto;
+  width: 40%;
+  padding: 20px 30px; /* define 20px de preenchimento superior e inferior, e 30px de preenchimento esquerdo e direito */
+  border: 1px solid #ccc; /* define uma borda de 1px com a cor cinza claro */
+  
+}
+
+.formulario .label {
+  margin: 0 auto; /* centraliza o formulário horizontalmente */
+  width: 50%; /* define a largura do formulário */
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px 10%; /* define 20px de preenchimento superior e inferior, e 30px de preenchimento esquerdo e direito */
+  border: 1px solid; /* define uma borda de 1px com a cor cinza claro */
 }
 
 .btn {
   font-size: 15px;
+  font-family: 'Poppins', sans-serif;
   background: transparent;
   border: none;
   padding: 1em 1.5em;
@@ -35,6 +69,47 @@ body {
   text-transform: uppercase;
   position: relative;
   transition: 0.5s ease;
+}
+
+.btn .botao {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 8;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+
+}
+
+.botao:focus,
+.botao:hover {
+  color: #fff;
+}
+
+.botao:focus:after,
+.botao:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.botao:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
 .btn::before {
@@ -113,7 +188,7 @@ a {
   color: black;
   ;
   margin-bottom: 12px;
-  font-weight: bold;
+  font-weight:normal;
   display: block;
 }
 
