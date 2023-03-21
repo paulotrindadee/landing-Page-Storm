@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-  * {
+  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
   }
-}
+
 ul {
   list-style: none;
 }
 
 body {
-  background: linear-gradient(90deg, #011126 4%, #497364 35%, #89d9a5 100%);
+  background: black;
 }
 
 .cabecalho {
@@ -152,3 +152,10 @@ textarea {
   top: -30px;
   left: -30px;
 }
+
+/* Estilos para dispositivos móveis */
+@media (min-width: 1024px) {
+  /*=== GERAL =================================*/
+  body {
+    overflow: auto;
+  }
